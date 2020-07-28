@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">5CEB_IT 5</string>
+    <string name="think_before_meal">Think Before Meal...</string>
+    <string name="log_in">Log-In</string>
 </resources>
