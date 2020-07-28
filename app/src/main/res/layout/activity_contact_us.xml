@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:elevation="20dp"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:elevation="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contact_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="Contact Us"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="40sp"
+                android:fontFamily="@font/roboto"
+                android:typeface="serif" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Name"
+                android:fontFamily="@font/roboto"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Email"
+                android:fontFamily="@font/roboto"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:lines="5"
+                android:hint="Message"
+                android:scrollbars="vertical"
+                android:fontFamily="@font/roboto"
+                android:inputType="textMultiLine" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/dialog_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="4dp"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Submit"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
