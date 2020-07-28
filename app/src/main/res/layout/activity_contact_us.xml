@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimary"
+
     android:orientation="vertical"
     android:gravity="center"
     android:elevation="20dp"
@@ -12,6 +12,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,46 +21,90 @@
             android:padding="50dp"
             android:layout_height="wrap_content"
             android:background="@drawable/dialog_bg"
-            android:elevation="100dp"
+            android:elevation="20dp"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/contact_form_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="16dp"
-                android:text="Contact Us"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="40sp"
-                android:fontFamily="@font/roboto"
-                android:typeface="serif" />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_baseline_fastfood_24"></ImageView>
+
+                <TextView
+                    android:id="@+id/contact_form_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/contact_us"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="24sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
 
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="60dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:hint="Name"
+                android:hint="@string/name"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:elevation="8dp"
+                android:padding="10dp"
                 android:fontFamily="@font/roboto"
+                android:focusedByDefault="false"
+                android:theme="@style/AppTheme"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/form_bg"
                 android:inputType="textPersonName" />
+
 
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
                 android:layout_marginBottom="10dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:hint="Email"
+                android:background="@drawable/form_bg"
+                android:hint="@string/email"
+                android:elevation="8dp"
+                android:padding="10dp"
+                android:focusedByDefault="false"
+                android:theme="@style/AppTheme"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:focusableInTouchMode="true"
                 android:fontFamily="@font/roboto"
                 android:inputType="textEmailAddress" />
 
             <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="55dp"
-                android:lines="5"
-                android:hint="Message"
+                android:layout_height="wrap_content"
+
+                android:maxLines="10"
+                android:drawableLeft="@drawable/ic_baseline_message_24"
+                android:minLines="3"
+                android:hint="@string/message"
+                android:background="@drawable/form_bg"
                 android:scrollbars="vertical"
+                android:elevation="8dp"
+
+                android:focusedByDefault="false"
+                android:theme="@style/AppTheme"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
                 android:fontFamily="@font/roboto"
                 android:inputType="textMultiLine" />
 
@@ -68,14 +113,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/dialog_bg"
                 android:backgroundTint="@color/colorPrimary"
-                android:elevation="4dp"
+                android:elevation="10dp"
                 android:fontFamily="@font/roboto"
-                android:paddingLeft="70dp"
-                android:paddingRight="70dp"
-                android:text="Submit"
+                android:text="@string/submit"
+                android:textAllCaps="false"
                 android:textColor="#fff" />
         </LinearLayout>
     </ScrollView>

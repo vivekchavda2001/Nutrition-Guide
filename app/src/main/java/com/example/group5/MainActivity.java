@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.cnt:
                 Intent intent = new Intent(MainActivity.this,ContactUs.class);
+                startActivity(intent);
                 return true;
         }
         return false;

@@ -4,4 +4,9 @@
     <string name="log_in">Log-In</string>
     <string name="about">About Us</string>
     <string name="contact">Contact Us</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="message">Message</string>
+    <string name="submit">Submit</string>
+    <string name="contact_us">Leave a Message</string>
 </resources>
