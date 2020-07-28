@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 public class splashScreen extends AppCompatActivity {
     TextView mSlogan;
-    Button mLoginButton;
     ImageView mLogo;
     Animation topAnim,bottomAnim;
 
@@ -26,11 +25,10 @@ public class splashScreen extends AppCompatActivity {
         topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
         bottomAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
         mLogo = findViewById(R.id.logo);
-        mLoginButton = findViewById(R.id.login);
         mSlogan = findViewById(R.id.slogan);
-        mLoginButton.setAnimation(bottomAnim);
+        //mLoginButton.setAnimation(bottomAnim);
         mLogo.setAnimation(topAnim);
-        mSlogan.setAnimation(topAnim);
+        mSlogan.setAnimation(bottomAnim);
 
     }
 }
