@@ -2,7 +2,11 @@ package com.example.group5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -29,6 +33,15 @@ public class splashScreen extends AppCompatActivity {
         //mLoginButton.setAnimation(bottomAnim);
         mLogo.setAnimation(topAnim);
         mSlogan.setAnimation(bottomAnim);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent i = new Intent(splashScreen.this, MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        }, 3*1000);
 
     }
+
 }
