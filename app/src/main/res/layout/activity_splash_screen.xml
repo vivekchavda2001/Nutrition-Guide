@@ -15,11 +15,11 @@ tools:context=".splashScreen">
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/slogan"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -27,12 +27,13 @@ tools:context=".splashScreen">
 
     <TextView
         android:id="@+id/slogan"
-        android:layout_width="416dp"
+        android:layout_width="0dp"
         android:layout_height="101dp"
 
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/bangers"
+        android:layout_marginTop="26dp"
 
+        android:layout_marginBottom="216dp"
+        android:fontFamily="@font/bangers"
         android:gravity="center"
         android:lineSpacingExtra="10dp"
         android:text="@string/app_name"
