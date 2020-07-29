@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">5CEB_IT 5</string>
-    <string name="think_before_meal">Think Before Meal...</string>
-    <string name="log_in">Log-In</string>
+    <string name="app_name">Nutrition   Guide...</string>
+    <string name="log_in">Log-In Now...</string>
     <string name="about">About Us</string>
     <string name="contact">Contact Us</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="message">Message</string>
-    <string name="submit">Submit</string>
+    <string name="submit">Send</string>
     <string name="contact_us">Leave a Message</string>
+    <string name="pass">Password</string>
+    <string name="Newuser">New User?</string>
+    <string name="signup">Sign Up</string>
 </resources>
