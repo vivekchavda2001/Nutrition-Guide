@@ -30,9 +30,7 @@ tools:context=".splashScreen">
         android:layout_width="0dp"
         android:layout_height="101dp"
 
-        android:layout_marginTop="26dp"
-
-        android:layout_marginBottom="216dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/bangers"
         android:gravity="center"
         android:lineSpacingExtra="10dp"

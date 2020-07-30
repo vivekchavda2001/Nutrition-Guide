@@ -32,55 +32,70 @@
                     android:id="@+id/imageView5"
                     android:layout_width="131dp"
                     android:layout_height="168dp"
-                    android:layout_marginStart="195dp"
-                    android:layout_marginLeft="195dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
                     android:layout_marginBottom="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="195dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginTop="50dp"
+                    android:elevation="30dp"
+
+
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.652"
+                    app:layout_constraintHorizontal_bias="0.681"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/users" />
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/rku_logo" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto"
                     android:text="@string/user_name"
-                    android:textColor="#FFFFFF"
-                    android:textSize="24sp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="20sp"
+                    android:typeface="serif"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView5"
-                    app:layout_constraintHorizontal_bias="0.544"
+                    app:layout_constraintHorizontal_bias="0.239"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.447" />
+                    app:layout_constraintVertical_bias="0.434" />
 
                 <TextView
                     android:id="@+id/textView_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto"
                     android:text="@string/developer"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
+                    android:textSize="30sp"
+
+                    android:textStyle="bold"
+                    android:typeface="serif"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView5"
                     app:layout_constraintHorizontal_bias="0.504"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.294" />
+                    app:layout_constraintVertical_bias="0.26999998" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="413dp"
-            android:layout_height="404dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:orientation="vertical"
-            android:paddingBottom="50dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -89,233 +104,178 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:gravity="center_horizontal"
+
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingLeft="30dp">
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+
+                    android:padding="10dp">
 
                     <ImageView
-                        android:id="@+id/img__email"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
-                        android:padding="20dp"
+                        android:background="@drawable/dialog_bg"
+                        android:elevation="5dp"
+                        android:padding="5dp"
+
                         app:srcCompat="@drawable/ic_baseline_email_24"
                         tools:ignore="VectorDrawableCompat" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/text_email"
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email"
+
+                            />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email_id" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text_email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/bangers"
-                        android:gravity="bottom"
-
-                        android:paddingLeft="15dp"
-                        android:text="@string/email"
-                        android:textColor="#575353"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/text_email_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/roboto"
-                        android:gravity="center_horizontal|left|center_vertical"
-
-                        android:paddingLeft="15dp"
-                        android:text="@string/email_id"
-                        android:textColor="#020202"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingLeft="30dp">
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp">
 
                     <ImageView
-                        android:id="@+id/img__phone"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
-                        android:padding="20dp"
+                        android:background="@drawable/dialog_bg"
+                        android:elevation="5dp"
+                        android:padding="5dp"
+
                         app:srcCompat="@drawable/ic_baseline_phone_24"
                         tools:ignore="VectorDrawableCompat" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone" />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone_no" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text_phone"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/bangers"
-                        android:gravity="bottom"
-
-                        android:paddingLeft="15dp"
-                        android:text="@string/phone"
-                        android:textColor="#575353"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/text_number_no"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/roboto"
-                        android:gravity="center_horizontal|left|center_vertical"
-
-                        android:paddingLeft="15dp"
-                        android:text="@string/phone_no"
-                        android:textColor="#020202"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingLeft="30dp">
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp">
 
                     <ImageView
-                        android:id="@+id/img__company"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
-                        android:padding="20dp"
+                        android:background="@drawable/dialog_bg"
+                        android:elevation="5dp"
+                        android:padding="5dp"
+
                         app:srcCompat="@drawable/ic_baseline_domain_24"
                         tools:ignore="VectorDrawableCompat" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Company" />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/company_name" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text_company"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/bangers"
-                        android:gravity="bottom"
-
-                        android:paddingLeft="15dp"
-                        android:text="@string/Company"
-                        android:textColor="#575353"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/text_com_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/roboto"
-                        android:gravity="center_horizontal|left|center_vertical"
-
-                        android:paddingLeft="15dp"
-                        android:text="@string/company_name"
-                        android:textColor="#020202"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingLeft="30dp">
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp">
 
                     <ImageView
-                        android:id="@+id/img__play_store"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
-                        android:padding="20dp"
+                        android:background="@drawable/dialog_bg"
+                        android:elevation="5dp"
+                        android:padding="5dp"
+
                         app:srcCompat="@drawable/ic_baseline_play_arrow_24"
                         tools:ignore="VectorDrawableCompat" />
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/text_play"
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/bangers"
-                        android:gravity="bottom"
+                        android:orientation="vertical">
 
-                        android:paddingLeft="15dp"
-                        android:text="@string/playstore"
-                        android:textColor="#575353"
-                        android:textSize="18sp" />
 
-                    <TextView
-                        android:id="@+id/text_play_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal|left|center_vertical"
-                        android:paddingLeft="15dp"
+                        <TextView
 
-                        android:text="@string/playstore_id"
-                        android:textColor="#020202"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                            style="@style/aboutTextMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/playstore" />
+
+                        <TextView
+                            style="@style/aboutTextsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/playstore_id" />
+
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
 
         </LinearLayout>
 

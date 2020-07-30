@@ -6,9 +6,19 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:textSize">14sp</item>
+    <style name="aboutTextMain">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:typeface">serif</item>
+    <item name="fontFamily">@font/roboto</item>
+    <item name="android:paddingLeft">15dp</item>
+        <item name="android:textStyle">bold</item>
+</style>
+    <style name="aboutTextsub">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:typeface">serif</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:paddingLeft">15dp</item>
     </style>
-
 </resources>
