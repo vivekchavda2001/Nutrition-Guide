@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="example.javatpoint.com.optionmenu.MainActivity">
 
-    <item  android:id="@+id/abt"
-        android:title="@string/about"/>
     <item  android:id="@+id/cnt"
         android:title="@string/contact"/>
+    <item
+        android:id="@+id/abt"
+        android:title="@string/about" />
 
 </menu>

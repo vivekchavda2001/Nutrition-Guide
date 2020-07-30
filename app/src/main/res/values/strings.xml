@@ -11,4 +11,14 @@
     <string name="pass">Password</string>
     <string name="Newuser">New User?</string>
     <string name="signup">Sign Up</string>
+    <string name="developer">Developer by</string>
+    <string name="user_name">Example Name</string>
+    <string name="email_id">Some123@gmail.com</string>
+    <string name="phone">Phone</string>
+    <string name="phone_no">+91 9847253656</string>
+    <string name="Company">Company Name</string>
+    <string name="company_name">Nutrition</string>
+    <string name="playstore">Play Store</string>
+    <string name="playstore_id">com.example</string>
+
 </resources>

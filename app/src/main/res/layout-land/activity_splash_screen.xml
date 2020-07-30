@@ -12,8 +12,8 @@ tools:context=".splashScreen">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="207dp"
+        android:layout_height="199dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:src="@drawable/logo"
@@ -30,7 +30,7 @@ tools:context=".splashScreen">
         android:layout_width="416dp"
         android:layout_height="101dp"
 
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="120dp"
         android:fontFamily="@font/bangers"
         android:gravity="center"
         android:lineSpacingExtra="10dp"

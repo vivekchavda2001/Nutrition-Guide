@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.abt:
-                Toast.makeText(this, "About Screen not yet implemented", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "About Screen not yet implemented", Toast.LENGTH_SHORT).show();
+                Intent intent1 = new Intent(MainActivity.this,About_as.class);
+                startActivity(intent1);
                 return true;
             case R.id.cnt:
                 Intent intent = new Intent(MainActivity.this,ContactUs.class);
